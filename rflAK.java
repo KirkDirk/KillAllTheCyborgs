@@ -1,7 +1,7 @@
 /**
  * Вид "АК" подкласса "Винтовки"
  */
-public class rflAK extends wpnRifle {
+public class RflAK extends WpnRifle {
 
     @Override
     public int wpnDamage() {
@@ -18,4 +18,8 @@ public class rflAK extends wpnRifle {
         return 50;
     }
     
+    @Override
+    public String toString() {
+        return "Винтовка АК " + super.toString();
+    }
 }

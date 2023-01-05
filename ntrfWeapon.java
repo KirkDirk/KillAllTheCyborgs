@@ -2,7 +2,7 @@
  * Интерфейс "Оружие".
  * Имеет поля: wpnDamage - урон; wpnSizeMagazine - размер магазина; wpnRange - дальность выстрела.
  */
-public interface ntrfWeapon {
+public interface NtrfWeapon {
     /**
      * @return Урон оружия 
      */
@@ -15,5 +15,5 @@ public interface ntrfWeapon {
      * @return Дальность выстрела
      */
     int wpnRange();
-
+   
 }

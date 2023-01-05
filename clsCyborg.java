@@ -1,32 +1,55 @@
 /**
  * Класс "Киборг"
  */
-public abstract class clsCyborg {
+public abstract class ClsCyborg<E extends NtrfWeapon> {
+    /** Поле класса "Киборг" - модель */
+    private String cbrgModel; 
+    /** Поле класса "Киборг" - роботоспособность */
+    private int cbrgCapasity;
+    /** Поле класса "Киборг" - оружие1 */
+    private int cbrgInitiative;
+    /** Оружие1 */
+    private E cbrgWeapon1;
+    
     /**
-     * Поля класса <Киборг>
+     * Экземпляр класса "Киборг"
+     * @param cbrgModel - модель
+     * @param cbrgCapasity - роботоспособность
+     * @param cbrgInitiative - инициатива
+     * @param cbrgWeapon1 - оружие1
      */
-    private String modelID; 
-    private int cyborgCapasity;
-    private int initiative;
-    
-    public String getModelID() {
-        return modelID;
+    public ClsCyborg(String cbrgModel, int cbrgCapasity, int cbrgInitiative, E cbrgWeapon1) {
+        this.cbrgModel = cbrgModel;
+        this.cbrgCapasity = cbrgCapasity;
+        this.cbrgInitiative = cbrgInitiative;
+        this.cbrgWeapon1 = cbrgWeapon1;
     }
-    public int getCyborgCapasity() {
-        return cyborgCapasity;
+    @Override
+    public String toString() {
+        return String.format("Киборг %s [РС: %d, И: %d, О: %s]", cbrgModel, cbrgCapasity, cbrgInitiative, cbrgWeapon1.toString());
     }
-    public int getInitiative() {
-        return initiative;
+    public String getCbrgModel() {
+        return cbrgModel;
     }
-    public void setModelID(String modelID) {
-        this.modelID = modelID;
+    public int getCbrgCapasity() {
+        return cbrgCapasity;
     }
-    public void setCyborgCapasity(int cyborgCapasity) {
-        this.cyborgCapasity = cyborgCapasity;
+    public int getCbrgInitiative() {
+        return cbrgInitiative;
     }
-    public void setInitiative(int initiative) {
-        this.initiative = initiative;
+    public E getCbrgWeapon1() {
+        return cbrgWeapon1;
     }
-
-    
+    public void setCbrgModel(String cbrgModel) {
+        this.cbrgModel = cbrgModel;
+    }
+    public void setCbrgCapasity(int cbrgCapasity) {
+        this.cbrgCapasity = cbrgCapasity;
+    }
+    public void setCbrgInitiative(int cbrgInitiative) {
+        this.cbrgInitiative = cbrgInitiative;
+    }
+    public void setCbrgWeapon1(E cbrgWeapon1) {
+        this.cbrgWeapon1 = cbrgWeapon1;
+    }
 }
