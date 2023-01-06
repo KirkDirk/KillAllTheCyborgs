@@ -10,6 +10,6 @@ public abstract class WpnRifle implements NtrfWeapon {
     
     @Override
     public String toString() {
-        return String.format("[У: %d, М: %d, Д: %в]", wpnDamage(), wpnSizeMagazine(), wpnRange());
+        return String.format("[У: %d, М: %d, Д: %d]", wpnDamage(), wpnSizeMagazine(), wpnRange());
     }
 }

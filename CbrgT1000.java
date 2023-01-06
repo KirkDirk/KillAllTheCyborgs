@@ -12,10 +12,5 @@ public class CbrgT1000 extends ClsCyborg<NtrfWeapon>{
     public CbrgT1000(String cbrgModel, int cbrgCapasity, int cbrgInitiative, NtrfWeapon cbrgWeapon1) {
         super("T1000", 1000, 50, new RflAK());
     }
-     
-    @Override
-    public String toString() {
-        return "Т1000" + super.toString();
-    }
-    
+         
 }
