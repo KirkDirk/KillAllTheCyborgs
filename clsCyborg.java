@@ -12,7 +12,7 @@ public abstract class ClsCyborg<E extends NtrfWeapon> {
     private E cbrgWeapon1;
     
     /**
-     * Экземпляр класса "Киборг"
+     * Конструктор класса "Киборг"
      * @param cbrgModel - модель
      * @param cbrgCapasity - роботоспособность
      * @param cbrgInitiative - инициатива
