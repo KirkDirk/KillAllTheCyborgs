@@ -13,4 +13,7 @@ public class CbrgT200 extends ClsCyborg<NtrfWeapon> {
         super("T200", 200, 30, new RflAK());
     }
     
+    public CbrgT200() {
+        this("", 0, 0, null);
+        }
 }

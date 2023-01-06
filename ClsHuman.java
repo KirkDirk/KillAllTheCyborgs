@@ -26,7 +26,7 @@ public abstract class ClsHuman <F extends NtrfWeapon> {
     }
     @Override
     public String toString() {
-        return String.format("Боец %s [РС: %d, И: %d, О: %s]", hmnName, hmnHealth, hmnInitiative, hmnWeapon1.toString());
+        return String.format("Боец %s [ОЖ: %d, И: %d, О: %s]", hmnName, hmnHealth, hmnInitiative, hmnWeapon1.toString());
     }
     public String getHmnName() {
         return hmnName;

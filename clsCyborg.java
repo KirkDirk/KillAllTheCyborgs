@@ -24,6 +24,10 @@ public abstract class ClsCyborg<E extends NtrfWeapon> {
         this.cbrgInitiative = cbrgInitiative;
         this.cbrgWeapon1 = cbrgWeapon1;
     }
+    public ClsCyborg() {
+        this("", 0, 0, null);
+}
+
     @Override
     public String toString() {
         return String.format("Киборг %s [РС: %d, И: %d, О: %s]", cbrgModel, cbrgCapasity, cbrgInitiative, cbrgWeapon1.toString());

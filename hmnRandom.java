@@ -1,3 +1,4 @@
+import java.lang.reflect.Constructor;
 import java.util.Random;
 
 /**
@@ -23,5 +24,9 @@ public class hmnRandom extends ClsHuman<NtrfWeapon> {
         super.setHmnInitiative(hmnInitiative);
         super.setHmnWeapon1(hmnWeapon1);
     }
-    
+
+    public hmnRandom() {
+        this("", 0, 0, null);
+    }
+        
 }
