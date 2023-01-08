@@ -8,19 +8,8 @@ import java.util.List;
 public class Group<A> implements Iterable<A> {
     /** Группа */
     List<A> group = new ArrayList<>();
-    /** Количество единиц в группе */
-    // int numbersOfUnits;
-
-    // /**
-    //  * Конструктор боевой группы
-    //  * @param group - список единиц в группе
-    //  * @param numbersOfUnits - количество единиц в группе
-    //  */
-    // public Group() {
-        //this.group = group;
-        //this.numbersOfUnits = numbersOfUnits;
-    // }
     
+        
     public void addCyborg (A newCyborg){
         group.add(newCyborg);    
     }
