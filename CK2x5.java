@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class CK2x5 {
     public static void main(String[] args) throws Exception {
 
@@ -17,8 +22,16 @@ public class CK2x5 {
         Group<ClsHuman> groupHumans = new Group<>();
 
         /** Наполнение группы людей из 5 единиц рандомными видами*/
+        /** Заданные имена людишек */
+        List<String> listHumans =  new ArrayList<String>(Arrays.asList("Ivan", "Boris", "Kyle Reese", "John Connor", "Sara Connor"));
         for (int i = 0; i < 5; i++) {
-            groupHumans.addHuman(new hmnRandom());
+            /** Выбираем имя человека. И удаляем его из списка, чтобы не повторялись */
+            Random random = new Random();
+            int index = random.nextInt(listHumans.size());
+            String hmnName = listHumans.get(index);
+            listHumans.remove(hmnName);
+            /** Добавляем человека в группу */
+            groupHumans.addHuman(new hmnRandom(hmnName));
         }
         groupHumans.forEach(item -> System.out.println(item));
 
